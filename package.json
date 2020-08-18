@@ -1,0 +1,20 @@
+{
+  "name": "esm-ut-test",
+  "version": "1.0.0",
+  "main": "lib/index.js",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "test": "jest"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@types/jest": "^26.0.10",
+    "jest": "^26.4.0",
+    "ts-jest": "^26.2.0",
+    "typescript": "^3.9.7"
+  },
+  "dependencies": {
+    "nanoid": "^3.1.12"
+  }
+}
