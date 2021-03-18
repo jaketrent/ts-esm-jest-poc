@@ -1,10 +1,10 @@
 {
   "name": "ts-esm-jest-poc",
   "version": "1.0.0",
-  "main": "dist/index.js",
+  "main": "dist/index.mjs",
   "type": "module",
   "scripts": {
-    "build": "tsc",
+    "build": "tsc && tsc-esm --project tsconfig.json",
     "test": "jest",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook"
@@ -20,7 +20,8 @@
     "babel-loader": "^8.2.2",
     "jest": "^26.4.0",
     "ts-jest": "^26.2.0",
-    "typescript": "^3.9.7"
+    "typescript": "^3.9.7",
+    "typescript-esm": "^1.0.1"
   },
   "dependencies": {
     "nanoid": "^3.1.12",

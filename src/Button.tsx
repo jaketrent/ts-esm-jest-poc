@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { multiply } from './multiply.js'
+import { multiply } from './multiply'
 import './button.css'
 
 export interface ButtonProps {
