@@ -1,7 +1,11 @@
-import { multiply } from '../multiply'
+import { multiply, useSubdep } from '../multiply'
 
 describe('multiply', () => {
-  it('bloody multiplies', () => {
+  it('multiplies', () => {
     expect(multiply(8, 8)).toEqual(64)
+  })
+
+  it('uses subdep', () => {
+    expect(useSubdep()).toBeDefined()
   })
 })

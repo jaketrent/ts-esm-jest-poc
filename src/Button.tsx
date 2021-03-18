@@ -1,5 +1,6 @@
 import React from 'react'
 
+import { multiply } from './multiply.js'
 import './button.css'
 
 export interface ButtonProps {
@@ -47,7 +48,7 @@ export const Button: React.FC<ButtonProps> = ({
       style={{ backgroundColor }}
       {...props}
     >
-      {label}
+      {label} {multiply(4, 4)}
     </button>
   )
 }
