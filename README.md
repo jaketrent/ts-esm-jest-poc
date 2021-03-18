@@ -17,8 +17,10 @@ Thanks to mtornwall for the original config that allows TS, ESM and Jest
   - type=module 
 - src/
   - *.ts files
-  - *.test.ts files
   - file extensions in relative imports 
+- src/__test__
+  - *.test.ts files
+  - no file extensions in relative imports 
 - src/stories/
   - result of npx sb init
 - jest.config.js
