@@ -1,3 +1,6 @@
-export * from "./multiply.js";
+export * from './multiply.js'
 
-console.log("I was loaded!");
+import { Button } from './stories/Button'
+
+console.log('I was loaded!')
+console.log(Button)
