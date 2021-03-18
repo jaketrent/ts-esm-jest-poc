@@ -22,7 +22,7 @@ Thanks to mtornwall for the original config that allows TS, ESM and Jest
   - *.test.ts files
   - no file extensions in relative imports 
 - src/stories/
-  - result of npx sb init
+  - result of npx sb init, then pared down, moved around
 - jest.config.js
   - uses ts-jest
 - tsconfig.js
