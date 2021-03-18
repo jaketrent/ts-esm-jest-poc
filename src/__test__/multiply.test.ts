@@ -5,4 +5,3 @@ describe('multiply', () => {
     expect(multiply(8, 8)).toEqual(64)
   })
 })
-
