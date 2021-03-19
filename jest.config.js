@@ -1,6 +1,7 @@
 export default {
   preset: 'ts-jest',
-  testEnvironment: 'node',
+  setupFilesAfterEnv: ['@testing-library/jest-dom/extend-expect'],
+  testEnvironment: 'jsdom',
   globals: {
     'ts-jest': {
       diagnostics: {

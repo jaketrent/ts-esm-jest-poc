@@ -1,14 +1,10 @@
-import Theme, { useTheme } from '@pluralsight/ps-design-system-theme'
-import {
-  HTMLPropsFor,
-  RefForwardingComponent,
-  ValueOf
-} from '@pluralsight/ps-design-system-util'
 import { css, StyleAttribute } from 'glamor'
 import React from 'react'
 
 import stylesheet from '../css'
 import { select } from '../js'
+import Theme, { useTheme } from '../../theme'
+import { HTMLPropsFor, RefForwardingComponent, ValueOf } from '../../util'
 import * as vars from '../vars'
 
 type StyleFn = (
@@ -21,7 +17,7 @@ const styles: { [key: string]: StyleFn } = {
     css(
       stylesheet['.psds-badge'],
       stylesheet[select(themeName, props.appearance, props.color)]
-    )
+    ),
 }
 
 interface InternalBadgeProps {

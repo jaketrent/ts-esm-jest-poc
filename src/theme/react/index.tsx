@@ -1,12 +1,12 @@
-import { ValueOf } from '@pluralsight/ps-design-system-util'
 import hoistNonReactStatics from 'hoist-non-react-statics'
 import React, {
   ComponentType,
   createContext,
   forwardRef,
-  useContext
+  useContext,
 } from 'react'
 
+import { ValueOf } from '../../util'
 import { defaultName, names } from '../vars'
 export { defaultName, names }
 
@@ -17,7 +17,7 @@ type ThemeProps = { name?: ValueOf<Names> }
 type ThemeStatics = { defaultName: typeof defaultName; names: Names }
 type ThemeComponent = React.FC<ThemeProps> & ThemeStatics
 
-const Theme: ThemeComponent = props => {
+const Theme: ThemeComponent = (props) => {
   const { name = defaultName } = props
 
   return (

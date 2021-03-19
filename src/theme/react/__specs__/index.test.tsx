@@ -1,13 +1,13 @@
-import { ValueOf } from '@pluralsight/ps-design-system-util'
 import { render } from '@testing-library/react'
 import { renderHook } from '@testing-library/react-hooks'
 
 import React, { HTMLAttributes } from 'react'
 
 import Theme, { defaultName, useTheme, withTheme } from '..'
+import { ValueOf } from '../../../util'
 
 describe('Theme', () => {
-  const MockComponent: React.FC<HTMLAttributes<HTMLDivElement>> = props => {
+  const MockComponent: React.FC<HTMLAttributes<HTMLDivElement>> = (props) => {
     const themeName = useTheme()
     return <div {...props}>{themeName}</div>
   }

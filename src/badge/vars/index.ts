@@ -1,4 +1,4 @@
-import { keyMirror } from '@pluralsight/ps-design-system-util'
+import { keyMirror } from '../../util'
 
 export const appearances = keyMirror('default', 'subtle')
 

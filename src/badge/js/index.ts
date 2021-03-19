@@ -1,6 +1,5 @@
-import Theme from '@pluralsight/ps-design-system-theme'
-import { ValueOf } from '@pluralsight/ps-design-system-util'
-
+import Theme from '../../theme'
+import { ValueOf } from '../../util'
 import * as vars from '../vars'
 
 export function select(

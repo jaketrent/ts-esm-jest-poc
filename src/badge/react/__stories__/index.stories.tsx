@@ -1,13 +1,12 @@
-import { ValueOf } from '@pluralsight/ps-design-system-util'
 import { storiesOf } from '@storybook/react'
-
 import React from 'react'
 
 import Badge from '..'
+import { ValueOf } from '../../../util'
 import * as vars from '../../vars'
 
 const BadgeStory = ({
-  appearance
+  appearance,
 }: {
   appearance: ValueOf<typeof vars.appearances>
 }) => (
@@ -23,6 +22,6 @@ const BadgeStory = ({
 )
 
 const appearanceStory = storiesOf('appearance', module)
-Object.values(Badge.appearances).forEach(appearance =>
+Object.values(Badge.appearances).forEach((appearance) =>
   appearanceStory.add(appearance, () => <BadgeStory appearance={appearance} />)
 )
