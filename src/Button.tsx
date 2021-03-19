@@ -1,7 +1,7 @@
 import React from 'react'
 
+import * as css from './button.styles'
 import { multiply } from './multiply'
-import './button.css'
 
 export interface ButtonProps {
   /**
@@ -42,10 +42,12 @@ export const Button: React.FC<ButtonProps> = ({
   return (
     <button
       type="button"
-      className={['storybook-button', `storybook-button--${size}`, mode].join(
-        ' '
-      )}
-      style={{ backgroundColor }}
+      style={{
+        ...css.button,
+        ...css[size],
+        ...(primary ? css.primary : css.secondary),
+        ...(backgroundColor && { backgroundColor }),
+      }}
       {...props}
     >
       {label} {multiply(4, 4)}
