@@ -1,6 +1,6 @@
 export default {
   preset: 'ts-jest',
-  resolver: '<rootDir>/ts-es-compat-resolver.cjs',
+  // resolver: '<rootDir>/ts-es-compat-resolver.cjs',
   testEnvironment: 'node',
   globals: {
     'ts-jest': {
